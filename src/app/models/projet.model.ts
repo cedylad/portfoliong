@@ -3,5 +3,8 @@ export class Projet{
     titleProjet!: string; 
     imgProjet!: string; 
     descriptionProjet!: string; 
-    optionnalProjet?: string;
+    stateProjet?: string;
+    frameworkProjet?: string;
+    lanagageProjet?: string;
+    githubProjet?: string;
 }

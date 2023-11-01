@@ -1,7 +1,7 @@
 <div class="projet-card">
     <h2>{{ projet.titleProjet | uppercase }}</h2>
-    <img [src]="projet.imgProjet" [alt]="projet.titleProjet">
+    <video [src]="projet.imgProjet" autoplay></video>
     <p>{{ projet.descriptionProjet }}</p>
-    <p *ngIf="projet.optionnalProjet"> Projet fini</p>
+    <p *ngIf="projet.stateProjet">{{ projet.stateProjet }}</p>
     <button (click)="onViewProjet()">VIEW</button>
 </div>
