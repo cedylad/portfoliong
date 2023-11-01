@@ -7,6 +7,7 @@ import { ProjetListComponent } from './projet-list/projet-list.component';
 import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
+import { SingleProjetComponent } from './single-projet/single-projet.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
     ProjetListComponent,
     HeaderComponent,
     LandingPageComponent,
+    SingleProjetComponent,
   ],
   imports: [
     BrowserModule, 

@@ -1,6 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Projet } from '../models/projet.model';
 import { ProjetsServices } from '../services/projets.services';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-projet',
@@ -10,9 +11,14 @@ import { ProjetsServices } from '../services/projets.services';
 export class ProjetComponent implements OnInit {
   @Input() projet!: Projet;
 
-  constructor(private projetsService: ProjetsServices) { }
+  constructor(private projetsService: ProjetsServices, 
+              private router: Router) { }
 
   ngOnInit(): void {
       
+  }
+
+  onViewProjet() {
+    this.router.navigateByUrl(`projets/${this.projet.id}`);
   }
 }
