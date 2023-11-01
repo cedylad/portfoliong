@@ -1,5 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { Projet } from '../models/projet.model';
+import { ProjetsServices } from '../services/projets.services';
 
 @Component({
   selector: 'app-projet',
@@ -8,6 +9,8 @@ import { Projet } from '../models/projet.model';
 })
 export class ProjetComponent implements OnInit {
   @Input() projet!: Projet;
+
+  constructor(private projetsService: ProjetsServices) { }
 
   ngOnInit(): void {
       
