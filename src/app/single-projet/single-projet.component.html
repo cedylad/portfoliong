@@ -1,7 +1,7 @@
 <div class="projet-card">
   <a routerLink="/projets">Back</a>
   <h2>{{ projet.titleProjet | uppercase }}</h2>
-  <video [src]="projet.imgProjet" controls></video>
+  <video [src]="projet.imgProjet" controls muted></video>
   <p>{{ projet.descriptionProjet }}</p>
 
   <a [href]="projet.githubProjet" target="_blank">
