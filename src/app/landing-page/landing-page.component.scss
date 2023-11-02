@@ -170,3 +170,46 @@
     }
   }
 }
+//Responsive smartphone
+@media (max-width: 768px) {
+  .landing-block {
+    .landing-presentation {
+      grid-template-columns: 1fr;
+    }
+
+    .img {
+      width: 100%;
+      height: auto;
+    }
+
+    .text {
+      .hi {
+        font-size: 24px;
+      }
+
+      .description {
+        font-size: 16px;
+      }
+
+      button {
+        span {
+          font-size: 0.9em;
+        }
+      }
+
+      .social-link {
+        width: 50px;
+        height: 50px;
+        svg {
+          path {
+            fill: white;
+          }
+        }
+        span {
+          width: 70px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
