@@ -1,7 +1,10 @@
 <div class="projet-card">
-    <h2>{{ projet.titleProjet | uppercase }}</h2>
-    <video [src]="projet.imgProjet" autoplay></video>
-    <p>{{ projet.descriptionProjet }}</p>
-    <p *ngIf="projet.stateProjet">{{ projet.stateProjet }}</p>
-    <button (click)="onViewProjet()">VIEW</button>
+  <h2>{{ projet.titleProjet | uppercase }}</h2>
+  <video [src]="projet.imgProjet" autoplay></video>
+  <p>{{ projet.frameworkProjet }}</p>
+  <p>{{ projet.lanagageProjet }}</p>
+  <p *ngIf="projet.stateProjet">{{ projet.stateProjet }}</p>
+  <button (click)="onViewProjet()">
+    <span>VIEW</span>
+  </button>
 </div>
