@@ -1,33 +1,172 @@
 .landing-block {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-        img {
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-  }
-  
-  .landing-links {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  object-fit: cover;
+  position: relative;
+  background-image: url("https://images.unsplash.com/photo-1533090161767-e6ffed986c88?auto=format&fit=crop&q=80&w=2969&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  object-fit: cover;
+  background-repeat: no-repeat;
+
+  .landing-presentation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
     width: 100%;
-    text-align: center;
+    height: 80%;
   }
-  
-  button {
-    background-color: transparent;
-    box-sizing: border-box;
-    padding: 5px 10px;
-    border: none;
-    box-shadow: lightgray 3px 3px 7px;
-    margin-right: 20px;
-    outline: none;
-    font-size: 20px;
-    font-weight: 500;
-    &:active {
-      transform: translate(1px, 1px);
-      box-shadow: lightgray 0 0 5px;
+
+  .img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0% 100% 65% 35% / 60% 44% 56% 40%;
+    align-items: center;
+    justify-content: center;
+    background-color: #183153;
+    overflow: hidden; /* Pour masquer le contenu qui dépasse la div */
+
+    img {
+      width: 100%; /* Remplir toute la largeur de la div */
+      height: 100%; /* Remplir toute la hauteur de la div */
+      object-fit: cover;
     }
   }
+
+  .text {
+    width: 100%;
+    height: 100%;
+    //border-radius: 100% 0% 86% 14% / 30% 60% 40% 70%;
+    //background-color: aqua;
+    display: flex; /* Utilisation de flexbox pour le centrage vertical et horizontal */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .hi {
+      color: black;
+      font-family: "Roboto Mono", monospace;
+      text-transform: uppercase;
+      font-size: 50px;
+      text-align: center;
+    }
+    .description {
+      color: black;
+      font-family: "Roboto Mono", monospace;
+      text-transform: uppercase;
+      font-size: 30px;
+      text-align: center;
+    }
+    button {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      background: #183153;
+      font-family: "Roboto Mono", monospace;
+      box-shadow: 0px 6px 24px 0px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      border: none;
+      cursor: pointer;
+
+      &:after {
+        content: " ";
+        width: 0%;
+        height: 100%;
+        background: #f7f4f4;
+        position: absolute;
+        transition: all 0.4s ease-in-out;
+        right: 0;
+      }
+
+      &:hover::after {
+        right: auto;
+        left: 0;
+        width: 100%;
+      }
+
+      span {
+        text-align: center;
+        text-decoration: none;
+        width: 100%;
+        padding: 18px 25px;
+        color: #fff;
+        font-size: 1.125em;
+        font-family: "Roboto Mono", monospace;
+        text-transform: uppercase;
+        font-weight: 700;
+        letter-spacing: 0.3em;
+        z-index: 20;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+          color: #183153;
+          animation: scaleUp 0.3s ease-in-out;
+        }
+      }
+    }
+
+    @keyframes scaleUp {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(0.95);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .social-link {
+      border: none;
+      border-radius: 5px;
+      width: 70px;
+      height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition-duration: 0.4s;
+      cursor: pointer;
+      position: relative;
+      background-color: #183153;
+      overflow: hidden;
+      margin: 30px;
+
+      svg {
+        transition-duration: 0.3s;
+        path {
+          fill: white;
+        }
+      }
+
+      span {
+        position: absolute;
+        color: #f7f4f4;
+        width: 120px;
+        font-weight: 600;
+        opacity: 0;
+        transition-duration: 0.4s;
+        font-family: "Roboto Mono", monospace;
+      }
+
+      &:hover {
+        width: 110px;
+        transition-duration: 0.4s;
+        border-radius: 5px;
+      }
+
+      &:hover span {
+        opacity: 1;
+        transition-duration: 0.4s;
+      }
+
+      &:hover svg {
+        opacity: 0;
+        transition-duration: 0.3s;
+      }
+    }
+  }
+}
