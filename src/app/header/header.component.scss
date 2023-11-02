@@ -5,14 +5,14 @@ header {
   margin: 0px;
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Pour centrer verticalement les éléments */
+  align-items: center;
 
   a {
     color: #000000;
     text-decoration: none;
     font-family: "Roboto Mono", monospace;
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 20px;
     padding: 10px;
 
     &:hover {

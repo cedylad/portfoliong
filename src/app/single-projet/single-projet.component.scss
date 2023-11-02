@@ -1,33 +1,93 @@
 .projet-card {
-    box-sizing: border-box;
-    width: 50%;
-    margin: 20px auto;
-    padding: 10px 30px;
-    box-shadow: lightgray 4px 4px 20px;
-    text-align: center;
-    video {
-      width: 100%;
-    }
-    h2 {
-      margin-bottom: 0;
-    }
-    p {
-      font-weight: 300;
-      font-size: 16px;
-    }
-    button {
-      background-color: transparent;
-      box-sizing: border-box;
-      padding: 5px 10px;
-      border: none;
-      box-shadow: lightgray 3px 3px 7px;
-      margin-right: 20px;
-      outline: none;
-      font-size: 14px;
-      font-weight: 500;
-      &:active {
-        transform: translate(1px, 1px);
-        box-shadow: lightgray 0 0 5px;
+  box-sizing: border-box;
+  width: 50%;
+  margin: 20px auto;
+  padding: 10px 30px;
+  box-shadow: lightgray 4px 4px 20px;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  video {
+    width: 100%;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  p {
+    font-weight: 300;
+    font-size: 16px;
+  }
+
+  .social-link {
+    border: none;
+    border-radius: 5px;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    position: relative;
+    background-color: #183153;
+    overflow: hidden;
+    margin: 30px;
+
+    svg {
+      transition-duration: 0.3s;
+      path {
+        fill: white;
       }
     }
+
+    span {
+      position: absolute;
+      color: #f7f4f4;
+      width: 120px;
+      font-weight: 600;
+      opacity: 0;
+      transition-duration: 0.4s;
+      font-family: "Roboto Mono", monospace;
+    }
+
+    &:hover {
+      width: 110px;
+      transition-duration: 0.4s;
+      border-radius: 5px;
+      background-color: #f7f4f4;
+    }
+
+    &:hover span {
+      opacity: 1;
+      transition-duration: 0.4s;
+      color: black;
+      text-transform: uppercase;
+    }
+
+    &:hover svg {
+      opacity: 0;
+      transition-duration: 0.3s;
+    }
   }
+
+  //Responsive smartphone
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 10px;
+    margin: 20px auto;
+    height: auto;
+    box-shadow: lightgray 2px 2px 10px;
+    overflow-x: hidden;
+
+    button {
+      padding: 6px;
+    }
+    span {
+      font-size: 0.1em;
+    }
+  }
+}
