@@ -8,25 +8,17 @@ export class ProjetsServices {
   projets: Projet[] = [
     {
       id: 1,
+      titleProjet: 'Générateur de mots de passes',
+      imgProjet: '/assets/projets/passwordgenerator.mov',
+      descriptionProjet: 'Extension de générateur pour mot de passe',
+    },
+    {
+      id: 2,
       titleProjet: 'HuberEat',
       imgProjet: '/assets/projets/hubereat.mov',
       descriptionProjet:
         "HubertEat est un site web construit en utilisant PHP selon le modèle MVC. Il s'agit d'une plateforme de commande de nourriture. Ce projet a été développé dans le cadre d'un examen.",
       githubProjet: 'https://github.com/cedylad/HubertEat',
-    },
-    {
-      id: 2,
-      titleProjet: 'Projet 2',
-      imgProjet:
-        'https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&q=80&w=2072&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      descriptionProjet: 'Desription projet 2',
-    },
-    {
-      id: 3,
-      titleProjet: 'Projet 3',
-      imgProjet:
-        'https://images.unsplash.com/photo-1474511320723-9a56873867b5?auto=format&fit=crop&q=80&w=2072&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-      descriptionProjet: 'Desription projet 3',
     },
   ];
 

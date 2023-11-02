@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { SingleProjetComponent } from './single-projet/single-projet.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { SingleProjetComponent } from './single-projet/single-projet.component';
     HeaderComponent,
     LandingPageComponent,
     SingleProjetComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule, 

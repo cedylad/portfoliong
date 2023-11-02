@@ -16,7 +16,7 @@ header {
     padding: 10px;
 
     &:hover {
-      text-decoration: underline;
+      text-decoration: underline overline #183153;
     }
   }
 
@@ -28,7 +28,7 @@ header {
   }
 
   .active {
-    color: #666;
-    text-decoration: underline;
+    color: #183153;
+    text-decoration: underline overline #183153;
   }
 }
