@@ -1,0 +1,7 @@
+<div class="projet-card">
+  <h2>{{ projet.titleProjet | uppercase }}</h2>
+  <video [src]="projet.imgProjet" controls muted></video>
+  <button (click)="onViewProjet()">
+    <span>Découvrir</span>
+  </button>
+</div>
