@@ -8,6 +8,7 @@ import { HeaderComponent } from './header/header.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FooterComponent } from './footer/footer.component';
+import { CompetencesComponent } from './competences/competences.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { FooterComponent } from './footer/footer.component';
     HeaderComponent,
     LandingPageComponent,
     FooterComponent,
+    CompetencesComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

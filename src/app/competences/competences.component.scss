@@ -1,0 +1,94 @@
+.card-competences {
+  background-color: #f7f4f4;
+  padding: 20px;
+  .competences {
+    background-color: #183153;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 10px;
+
+    h2 {
+      font-family: "Roboto Mono", monospace;
+      text-transform: uppercase;
+      font-size: 50px;
+      padding-top: -50px;
+      color: #f7f4f4;
+    }
+
+    h3 {
+      font-family: "Roboto Mono", monospace;
+      text-transform: uppercase;
+      font-size: 30px;
+      color: white;
+    }
+
+    .langages {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      img {
+        width: 85px;
+        border-radius: 10px;
+        box-shadow: 10px 5px 5px #c3c3c378;
+        background-color: white;
+        margin: 10px;
+      }
+    }
+
+    .frameworks {
+      display: flex;
+      align-items: center;
+      flex-direction: row;
+
+      img {
+        width: 85px;
+        border-radius: 10px;
+        box-shadow: 10px 5px 5px #c3c3c378;
+        margin: 10px;
+        background-color: white;
+      }
+    }
+  }
+}
+// Responsive smartphone
+@media (max-width: 1024px) {
+  .card-competences {
+    padding: 0px;
+    .competences {
+      background-color: #183153;
+      margin-left: 0%;
+      margin-right: 0%;
+      border-radius: 0px;
+
+      .langages {
+        flex-flow: wrap;
+        justify-content: center;
+        img {
+          width: 85px;
+          border-radius: 10px;
+          box-shadow: 10px 5px 5px #183153;
+          background-color: white;
+          margin: 10px;
+        }
+      }
+
+      .frameworks {
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+          width: 85px;
+          border-radius: 10px;
+          box-shadow: 10px 5px 5px #183153;
+          background-color: white;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}

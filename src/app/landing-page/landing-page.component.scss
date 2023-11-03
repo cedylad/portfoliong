@@ -1,7 +1,7 @@
 .landing-block {
   width: 100%;
   height: 100%;
-  background-color: #ffffff;
+  background-color: #f7f4f4;
   object-fit: cover;
   position: relative;
   //background-image: url("/assets/backbw.jpg");
@@ -146,6 +146,7 @@
       }
 
       button {
+        font-size: 30px;
         span {
           font-size: 0.9em;
         }
