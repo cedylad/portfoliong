@@ -9,6 +9,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { FooterComponent } from './footer/footer.component';
 import { CompetencesComponent } from './competences/competences.component';
+import { ClipboardModule } from 'ngx-clipboard';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,7 @@ import { CompetencesComponent } from './competences/competences.component';
     FooterComponent,
     CompetencesComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, ClipboardModule],
   providers: [],
   bootstrap: [AppComponent],
 })
