@@ -11,13 +11,14 @@ export class ProjetsServices {
       titleProjet: 'Générateur de mots de passes',
       imgProjet: '/assets/projets/passwordgenerator.mov',
       descriptionProjet: 'Extension de générateur pour mot de passe',
+      githubProjet: 'https://github.com/cedylad/PassGenExt',
     },
     {
       id: 2,
       titleProjet: 'HuberEat',
       imgProjet: '/assets/projets/hubereat.mov',
       descriptionProjet:
-        "HubertEat est un site web construit en utilisant PHP selon le modèle MVC. Il s'agit d'une plateforme de commande de nourriture. Ce projet a été développé dans le cadre d'un examen.",
+        "HubertEat est un site web construit en utilisant PHP selon le modèle MVC. Il s'agit d'une plateforme de commande de nourriture.",
       githubProjet: 'https://github.com/cedylad/HubertEat',
     },
   ];

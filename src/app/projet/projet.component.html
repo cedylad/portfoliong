@@ -1,7 +1,10 @@
 <div class="projet-card">
   <h2>{{ projet.titleProjet | uppercase }}</h2>
   <video [src]="projet.imgProjet" controls muted></video>
-  <button (click)="onViewProjet()">
-    <span>Découvrir</span>
-  </button>
+  <p>{{ projet.descriptionProjet }}</p>
+  <a [href]="projet.githubProjet" target="_blank">
+    <button>
+      <span>Repository</span>
+    </button>
+  </a>
 </div>
